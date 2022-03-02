@@ -1,0 +1,25 @@
+@use "../../sass/utils";
+
+.advice-button {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background-color: utils.$neonGreen;
+	display: flex;
+	border: none;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+	outline: none;
+	transition-duration: utils.$duration;
+
+	&:hover {
+		box-shadow: 0px 0px 20px 2px utils.$neonGreen;
+	}
+
+	img {
+		margin: auto;
+	}
+}

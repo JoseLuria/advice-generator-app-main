@@ -1,0 +1,55 @@
+@use "../../sass/utils";
+
+.advice-container {
+	margin: auto;
+	position: relative;
+	width: 100%;
+	max-width: 540px;
+
+	.advice-card {
+		background-color: utils.$darkGrayishBlue;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2.5rem 1.75rem 4rem;
+		width: 100%;
+		border-radius: 15px;
+		margin-bottom: 32px;
+		text-align: center;
+
+		.advice-title {
+			color: utils.$neonGreen;
+			text-transform: uppercase;
+			font-size: 0.688rem;
+			letter-spacing: 0.3em;
+			
+			@media(min-width: 768px) {
+				font-size: 0.813rem;
+			}
+		}
+
+		.advice-text {
+			width: 100%;
+			max-width: 440px;
+			color: utils.$lightCyan;
+			margin-top: 32px;
+			margin-bottom: 24px;
+			font-size: 1.5rem;
+
+			@media(min-width: 768px) {
+				margin-bottom: 32px;
+				font-size: 1.75rem;
+			}	
+		}
+
+		.pattern-divider {
+			width: 100%;
+			max-width: 295px;
+
+			@media(min-width: 768px){
+				width: 100%;
+				max-width: 444px;
+			}
+		}
+	}
+}
